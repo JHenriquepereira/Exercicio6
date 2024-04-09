@@ -1,0 +1,55 @@
+
+/* Define a fonte padrão de todo o texto dentro do elemento <body> para Arial, com fallback para qualquer fonte sans-serif disponível. 
+Isso garante uma aparência consistente e legível para o texto em toda a página. */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Estiliza o cabeçalho da página (#header) com uma cor de fundo azul (#007bff), texto em branco, um espaçamento interno de 20px para dar
+ mais espaço ao redor do conteúdo interno e centraliza o texto horizontalmente. */
+#header {
+    background-color: #007bff;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Aplica o display flex ao elemento <main>, o que permite um layout flexível que pode acomodar diferentes tamanhos de tela. 
+'justify-content: space-between' distribui o espaço entre e ao redor dos itens de forma igual, colocando-os nos extremos do contêiner. 
+O padding de 20px adiciona espaço ao redor do conteúdo interno de <main>. */
+#main {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+/* Define a largura das divs com as classes .left-column e .right-column para 48% do contêiner pai, permitindo que elas fiquem lado a 
+lado com um pouco de espaço entre elas, assumindo que o contêiner pai é flexível. */
+.left-column,
+.right-column {
+    width: 48%;
+}
+
+/* Aplica um fundo cinza claro (#f8f9fa) e um padding de 10px à coluna esquerda, criando um contraste suave com outros elementos e 
+garantindo que o conteúdo tenha espaço adequado das bordas da <div>. */
+.left-column {
+    background-color: #f8f9fa;
+    padding: 10px;
+}
+
+/* Similarmente, aplica um fundo cinza um pouco mais escuro (#e9ecef) e um padding de 10px à coluna direita. Isso ajuda a diferenciar 
+visualmente as duas colunas, ao mesmo tempo que mantém a harmonia no design. */
+.right-column {
+    background-color: #e9ecef;
+    padding: 10px;
+}
+
+/* Estiliza o rodapé da página (#footer) com uma cor de fundo cinza escuro (#6c757d), texto em branco, e centraliza o texto. Um padding 
+de 10px adiciona espaço ao redor do conteúdo, e um margin-top de 20px cria um espaço entre o rodapé e o resto do conteúdo da página. */
+#footer {
+    background-color: #6c757d;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
